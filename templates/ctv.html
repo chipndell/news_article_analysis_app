@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+	<ul>
+	{% for user in vals %}
+	  <li>Title : {{ user['t'] }}</li>
+	  <li>Description : {{ user['d'] }}</li>
+	  <li>Polarity : {{ user['p'] }}, Subjectivity: {{ user['s'] }}</li> <br />
+	{% endfor %}
+	</ul>
+
+{% endblock  %}
