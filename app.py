@@ -22,12 +22,5 @@ def ctv_view():
 	x = ctv_scrap()
 	return render_template('ctv.html', agency = 'CTV', vals = x)
 
-
-# @app.route('/contact_us')
-# def contact_us():
-# 	return render_template('contact_us.html')
-
-
-
 if __name__ == "__main__":
 	app.run(debug=True)
